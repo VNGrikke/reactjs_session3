@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array = [1, 2, 3, 4]; 
+        array.push(5);
+        // thêm một phần tử vào mảng array vẫn hoạt động bình thường. Mặc dù biến array được 
+        // khai báo bằng từ khóa const, nhưng mảng vẫn có thể được thay đổi bên trong, bao gồm 
+        // việc thêm hoặc xóa phần tử. Điều này là vì từ khóa const chỉ đảm bảo rằng biến không 
+        // thể được gán lại một giá trị mới hoặc tham chiếu mới, nhưng nó không ngăn chặn sự 
+        // thay đổi bên trong của đối tượng được gán cho biến đó
+        console.log("Mảng sau khi thêm một phần tử là: " + array);
+        
+        const number = 5;
+        number = 10;
+        // Khi chạy đoạn mã trên, sẽ xảy ra lỗi khi cố gắng gán lại giá trị 
+        // cho biến số nguyên number bởi vì biến này đã được khai báo bằng từ 
+        // khóa const, nghĩa là không thể thay đổi giá trị sau khi đã được gán ban đầu.
+        console.log("Giá trị của biến số nguyên sau khi gán☻ lại là: " + number);
+    </script>
+</body>
+</html>

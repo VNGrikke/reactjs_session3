@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (let i = 0; i < 6; i++) {
+            console.log("Giá trị của i trong vòng lặp là: " + i);
+        }
+        console.log("Giá trị của i ngoài vòng lặp là: " + i);
+        // biến i chỉ có thể truy cập được trong phạm vi của vòng lặp for. 
+        // Khi cố gắng truy cập biến i ngoài vòng lặp, JavaScript sẽ gây ra 
+        // lỗi vì biến i không được định nghĩa trong phạm vi đó. Điều này 
+        // là do từ khóa let tạo ra một biến có phạm vi cục bộ chỉ trong 
+        // khối lệnh mà nó được khai báo
+    </script>
+</body>
+</html>
